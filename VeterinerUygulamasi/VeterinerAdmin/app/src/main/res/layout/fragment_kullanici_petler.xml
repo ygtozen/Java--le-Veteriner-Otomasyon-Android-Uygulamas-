@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.KullaniciPetlerFragment">
+
+    <LinearLayout
+        android:id="@+id/kullaniciPetlerHeader"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp"
+        android:background="#003368"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/kullaniciPetlerBack"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/back"/>
+
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="Kullanıcı Pet Listesi"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userPet_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/userPetEkle"
+        android:layout_below="@+id/kullaniciPetlerHeader"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/petEkleResimYok"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/kullaniciPetlerHeader"
+        android:visibility="gone"
+        android:background="@drawable/ordek"/>
+
+    <TextView
+        android:id="@+id/petEkleUyariText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/petEkleResimYok"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="#b62a25"
+        android:textSize="20sp"
+        android:text="Bu kullanıcıya ait pet yoktur.
+Pet Eklemek için aşağıdaki butona basınız."/>
+
+    <Button
+        android:id="@+id/userPetEkle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="#617afe"
+        android:layout_alignParentBottom="true"
+        android:text="Pet Ekle"/>
+
+</RelativeLayout>

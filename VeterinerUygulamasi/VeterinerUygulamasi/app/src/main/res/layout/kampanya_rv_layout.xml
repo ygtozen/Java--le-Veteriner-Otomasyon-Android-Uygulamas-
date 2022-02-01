@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#eaeaea"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/kampanya_baslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#a00000"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="Başlık"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="#eaeaea"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+        <ImageView
+            android:id="@+id/kampanya_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/kampanya_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#000a51"
+            android:layout_margin="10dp"
+            android:text="Text"/>
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
